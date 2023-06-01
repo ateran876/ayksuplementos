@@ -1,0 +1,38 @@
+h1{
+    font-family: 'Gluten', cursive;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
+
+.ubicacion{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-around; 
+}
+
+.maps{
+    width: 30%;
+}
+
+.redessociales{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+
+.tamins{
+    height: 380px;
+    border: none;
+    overflow: hidden; /* profe no se me oculta el scroll*/
+}
+
+.tamins :hover{
+    overflow: scroll;
+}
+
+.cont{
+    padding-bottom: 40px;
+}

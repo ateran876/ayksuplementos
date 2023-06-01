@@ -1,0 +1,124 @@
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.encuadre{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-areas: 
+    "text1 video1"
+    "text2 video2"
+    "text3 video3"
+    "text4 video4";
+}
+.text1{
+    text-align: justify;
+    grid-area: text1;
+    padding: 10px;
+    margin-top: 20px;
+}
+.text2{
+    text-align: justify;
+    grid-area: text2;
+    padding: 10px;
+    margin-top: 20px;
+}
+.text3{
+    text-align: justify;
+    grid-area: text3;
+    padding: 10px;
+    margin-top: 20px;
+}
+.text4{
+    text-align: justify;
+    grid-area: text4;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.video1{
+    grid-area: video1;
+    margin-top: 20px;
+}
+.video2{
+    grid-area: video2;
+    margin-top: 20px;
+}
+.video3{
+    grid-area: video3;
+    margin-top: 20px;
+}
+.video4{
+    grid-area: video4;
+    margin-top: 20px;
+}
+
+                                                                                                    /* Responsive */
+@media screen and (max-width: 1224px){
+    .encuadre{
+/*         padding-left: 10%;
+        padding-right: 10%; */
+        grid-template-columns: 1fr;
+        /* grid-template-rows: repeat(8, 1fr); */
+        grid-template-areas: 
+        "text1" "video1"
+        "text2" "video2"
+        "text3" "video3"
+        "text4" "video4";
+    }
+    .text1{
+        text-align: justify;
+        grid-area: text1;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .text2{
+        text-align: justify;
+        grid-area: text2;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .text3{
+        text-align: justify;
+        grid-area: text3;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .text4{
+        text-align: justify;
+        grid-area: text4;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .video1{
+        grid-area: video1;
+        margin: 0%;
+        align-items: center;
+    }
+    .video2{
+        grid-area: video2;
+        margin: 0%;
+        align-items: center;
+    }
+    .video3{
+        grid-area: video3;
+        margin: 0%;
+        align-items: center;
+    }
+    .video4{
+        grid-area: video4;
+        margin: 0%;
+        align-items: center;
+    }
+   
+}
