@@ -444,7 +444,7 @@ h1{
 }
 
 .formulario{
-    background: #09332893;
+    background: #ffffff;
     margin-top: 150px;
     padding: 3px;
 }
@@ -505,4 +505,11 @@ p{
         margin-top: 150px;
         border-radius: 5%;
     }
+}
+
+/* Suggestion */
+
+.sugges{
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
