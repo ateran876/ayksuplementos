@@ -409,7 +409,7 @@ h1{
     padding-bottom: 40px;
 }
 
-@media screen and (max-width: 1224px){
+@media screen and (max-width: 768px){
 h1 {
     font-family: 'Gluten', cursive;
     justify-content: center;
@@ -635,40 +635,40 @@ h1{
     margin-bottom: 15px;
 }
 @media screen and (max-width: 768px){
-    .ajuste {
+.ajuste {
         display: grid;
         grid-template-columns: auto;
-      }
+    }
     
-      .title {
+.title {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 26px;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 10px;
-      }
+    }
     
-      .parrafo {
+.parrafo {
         font-family: 'Josefin Sans', sans-serif;
         text-align: justify;
         text-indent: 10px;
         font-size: 18px;
-      }
+    }
     
-      .cuadro {
+    .cuadro {
         background: linear-gradient(rgb(6, 51, 34), rgb(241, 238, 238));
         border: 2px;
         border-radius: 5px;
         padding: 30px;
         margin-bottom: 10px;
-      }
+    }
     }
 
 @media screen and (max-width: 500px) {
 .ajuste {
     display: grid;
     grid-template-columns: auto;
-  }
+}
 
 .title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -676,7 +676,7 @@ h1{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
- }
+}
 .parrafo {
     font-family: 'Josefin Sans', sans-serif;
     text-align: justify;
