@@ -1,3 +1,5 @@
+@import 'varmix';
+
 *{
     margin: 0%;
     padding: 0%;
@@ -6,16 +8,15 @@
 }
 
 /* Variables */
-$color-fothead: #242628 ;
+/* $color-fothead: #242628 ; */
 
-/* Extend */
-.cuadro {
-  background: linear-gradient(rgb(100, 241, 18), rgb(241, 238, 238));
-  border: 2px;
-  border-radius: 5%;
-  padding: 40px;
-  margin-bottom: 15px;
-}
+/* mixin */
+/* @mixin edit-parrafo{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+} */
 
 body {
     font-family: sans-serif;
@@ -660,29 +661,50 @@ h1 {
     /* color: white; */
   }
   
-  .parrafo {
-    text-align: justify;
-    font-family: 'Josefin Sans', sans-serif;
-    text-indent: 10px;
+  .parrafo1 {
+    @include edit-parrafo;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-  
-  .c1 {
-    @extend .cuadro;
-    background: linear-gradient(rgb(7, 5, 71), rgb(241, 238, 238));
+
+  .parrafo2{
+    @include edit-parrafo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: none;
   }
+
+  .parrafo3{
+    @include edit-parrafo;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: none;
+  }
+
+  .parrafo4{
+    @include edit-parrafo;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: none;
+  }
+
+  /* Extend */
+  .c1{
+  background: linear-gradient(rgb(100, 241, 18), rgb(241, 238, 238));
+  border: 2px;
+  border-radius: 5%;
+  padding: 40px;
+  margin-bottom: 15px;
+}
   
   .c2 {
-    @extend .cuadro;
+    @extend .c1;
     background: linear-gradient(rgb(53, 71, 7), rgb(241, 238, 238));
   }
   
   .c3 {
-    @extend .cuadro;
+    @extend .c1;
     background: linear-gradient(rgb(14, 65, 7), rgb(241, 238, 238));
   }
   
   .c4 {
-    @extend .cuadro;
+    @extend .c1;
     background: linear-gradient(rgb(26, 4, 78), rgb(241, 238, 238));
   }
   

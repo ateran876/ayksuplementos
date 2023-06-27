@@ -1,3 +1,5 @@
+/* Variables */
+/* mixin */
 * {
   margin: 0%;
   padding: 0%;
@@ -6,15 +8,14 @@
 }
 
 /* Variables */
-/* Extend */
-.cuadro, .c4, .c3, .c2, .c1 {
-  background: linear-gradient(rgb(100, 241, 18), rgb(241, 238, 238));
-  border: 2px;
-  border-radius: 5%;
-  padding: 40px;
-  margin-bottom: 15px;
-}
-
+/* $color-fothead: #242628 ; */
+/* mixin */
+/* @mixin edit-parrafo{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+} */
 body {
   font-family: sans-serif;
   text-transform: capitalize;
@@ -587,14 +588,48 @@ h1 {
   /* color: white; */
 }
 
-.parrafo {
-  text-align: justify;
-  font-family: "Josefin Sans", sans-serif;
-  text-indent: 10px;
+.parrafo1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.c1 {
-  background: linear-gradient(rgb(7, 5, 71), rgb(241, 238, 238));
+.parrafo2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: none;
+}
+
+.parrafo3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: none;
+}
+
+.parrafo4 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-style: none;
+}
+
+/* Extend */
+.c1, .c4, .c3, .c2 {
+  background: linear-gradient(rgb(100, 241, 18), rgb(241, 238, 238));
+  border: 2px;
+  border-radius: 5%;
+  padding: 40px;
+  margin-bottom: 15px;
 }
 
 .c2 {
@@ -627,7 +662,7 @@ h1 {
     text-indent: 10px;
     font-size: 18px;
   }
-  .c1 .c2 .c3 .c4 {
+  .c1 .c2 .c3 .c4, .c2 .c2 .c3 .c4, .c3 .c2 .c3 .c4, .c4 .c2 .c3 .c4 {
     /* background: linear-gradient(rgb(6, 51, 34), rgb(241, 238, 238)); */
     border: 2px;
     border-radius: 5px;
@@ -653,7 +688,7 @@ h1 {
     text-indent: 10px;
     font-size: 16px;
   }
-  .c1 .c2 .c3 .c4 {
+  .c1 .c2 .c3 .c4, .c2 .c2 .c3 .c4, .c3 .c2 .c3 .c4, .c4 .c2 .c3 .c4 {
     /* background: linear-gradient(rgb(6, 51, 34), rgb(241, 238, 238)); */
     border: 2px;
     border-radius: 5px;
