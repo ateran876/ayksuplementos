@@ -88,7 +88,7 @@ body {
   @media screen and (max-width: 991px) {
     .menu label {
       padding: 30px;
-      display: initial;
+      display: initial; 
     }
   
  /*    .menu label {
@@ -108,9 +108,10 @@ body {
       display: none;
   
       ul {
+        margin-top: -5px;
         li {
           width: 100%;
-          background-color: #242628;
+          background-color: #68717a;
         }
       }
     }
@@ -449,11 +450,12 @@ h1 {
       
       .ubicacion {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding-top: 30px;
         padding-bottom: 30px;
+        padding-right: 5%;
       }
       
       .maps {
@@ -504,17 +506,19 @@ h1 {
         padding-top: 20px;
         padding-bottom: 20px;
       }
-      
+
+      iframe{
+        padding-bottom: 15px;
       .maps {
         width: 100%;
         max-width: 300px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
       }
-      
+      }
     
       .redessociales {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 20px;
@@ -524,6 +528,9 @@ h1 {
     
       .tamins {
         height: auto;
+        border: 1px dotted black;
+        margin-bottom: 10px;
+        padding-bottom: 2px;
       }
       
     
@@ -659,22 +666,23 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     /* color: white; */
+    color: #bdc2c7;
   }
   
   .parrafo1 {
     @include edit-parrafo;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .parrafo2{
     @include edit-parrafo;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-style: none;
   }
 
   .parrafo3{
     @include edit-parrafo;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     font-style: none;
   }
 
@@ -686,7 +694,7 @@ h1 {
 
   /* Extend */
   .c1{
-  background: linear-gradient(rgb(100, 241, 18), rgb(241, 238, 238));
+  background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
   border: 2px;
   border-radius: 5%;
   padding: 40px;
@@ -695,17 +703,17 @@ h1 {
   
   .c2 {
     @extend .c1;
-    background: linear-gradient(rgb(53, 71, 7), rgb(241, 238, 238));
+    background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
   }
   
   .c3 {
     @extend .c1;
-    background: linear-gradient(rgb(14, 65, 7), rgb(241, 238, 238));
+    background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
   }
   
   .c4 {
     @extend .c1;
-    background: linear-gradient(rgb(26, 4, 78), rgb(241, 238, 238));
+    background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
   }
   
 
