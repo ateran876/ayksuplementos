@@ -228,7 +228,7 @@ body {
         }
     }
 /* INDEX */  
-  .title {
+  .name {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     padding-bottom: 10px;
@@ -430,6 +430,7 @@ h1 {
     height: 380px;
     border: none;
     overflow: hidden; /* profe no se me oculta el scroll*/
+    border: 0.5px dotted black;
   }
   
   .tamins:hover {
@@ -477,6 +478,8 @@ h1 {
         height: 280px;
         border: none;
         overflow: hidden;
+        border: 1px dotted black;
+        margin-bottom: 15px;
       }
       
       .tamins:hover {
