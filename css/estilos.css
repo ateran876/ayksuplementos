@@ -7,18 +7,8 @@
   list-style: none;
 }
 
-/* Variables */
-/* $color-fothead: #242628 ; */
-/* mixin */
-/* @mixin edit-parrafo{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  font-style: italic;
-  text-align: center;
-} */
 body {
   font-family: sans-serif;
-  text-transform: capitalize;
 }
 
 /* HEADER */
@@ -80,9 +70,6 @@ body {
     padding: 30px;
     display: initial;
   }
-  /*    .menu label {
-       display: initial;
-     } */
   .back {
     padding: 47px 0;
   }
@@ -216,7 +203,6 @@ h1 {
   padding-right: 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(4, 1fr); */
   grid-template-areas: "text1 video1" "text2 video2" "text3 video3" "text4 video4";
 }
 
@@ -270,10 +256,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .encuadre {
-    /*         padding-left: 10%;
-            padding-right: 10%; */
     grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(8, 1fr); */
     grid-template-areas: "text1" "video1" "text2" "video2" "text3" "video3" "text4" "video4";
   }
   .text1 {
@@ -351,7 +334,8 @@ h1 {
   }
 }
 /* CONTAC */
-h1 {
+.titlecont {
+  font-size: 50px;
   font-family: "Gluten", cursive;
   justify-content: center;
   display: flex;
@@ -379,7 +363,7 @@ h1 {
 .tamins {
   height: 380px;
   border: none;
-  overflow: hidden; /* profe no se me oculta el scroll*/
+  overflow: hidden;
   border: 0.5px dotted black;
 }
 
@@ -392,12 +376,12 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
+  .titlecont {
     font-family: "Gluten", cursive;
     justify-content: center;
     display: flex;
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 40px;
   }
   .ubicacion {
     display: flex;
@@ -436,12 +420,12 @@ h1 {
   }
 }
 @media screen and (max-width: 500px) {
-  h1 {
+  .titlecont {
     font-family: "Gluten", cursive;
     justify-content: center;
     display: flex;
     padding-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .ubicacion {
     display: flex;
@@ -598,8 +582,9 @@ h1 {
 .title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
-  /* color: white; */
   color: #bdc2c7;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .parrafo1 {
@@ -643,23 +628,12 @@ h1 {
 
 /* Extend */
 .c1, .c4, .c3, .c2 {
-  background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
+  background: linear-gradient(rgb(63, 65, 64), rgba(70, 70, 70, 0.959));
   border: 2px;
   border-radius: 5%;
   padding: 40px;
   margin-bottom: 15px;
-}
-
-.c2 {
-  background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
-}
-
-.c3 {
-  background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
-}
-
-.c4 {
-  background: linear-gradient(rgb(63, 65, 64), rgb(70, 39, 39));
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -681,7 +655,6 @@ h1 {
     font-size: 18px;
   }
   .c1 .c2 .c3 .c4, .c2 .c2 .c3 .c4, .c3 .c2 .c3 .c4, .c4 .c2 .c3 .c4 {
-    /* background: linear-gradient(rgb(6, 51, 34), rgb(241, 238, 238)); */
     border: 2px;
     border-radius: 5px;
     padding: 30px;
