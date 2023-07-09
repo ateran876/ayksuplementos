@@ -688,11 +688,6 @@ h1 {
   }
 }
 /* REGISTER Y LOGIN */
-.volver {
-  display: flex;
-  padding: 10px;
-}
-
 .formulario {
   background: #ffffff;
   margin-top: 150px;
